@@ -35,7 +35,7 @@ class ContactController extends Controller
 
     public function confirm($name, $hurigana, $mail, $content)
     {
-      if (url()->previous() === "http://localhost:8000/input") {
+      if (url()->previous() === 'http://localhost:8000/input') {
         return view("contact.confirm")->with([
           "name" => $name,
           "hurigana" => $hurigana,
